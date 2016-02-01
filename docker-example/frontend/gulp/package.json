@@ -1,0 +1,26 @@
+{
+  "name": "docker-example",
+  "version": "1.0.0",
+  "description": "Simple web application to test Docker",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miciu/docker.git"
+  },
+  "author": "miciu",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-inject": "^1.3.1",
+    "gulp-less": "^3.0.3",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-watch": "^4.3.3",
+    "lazypipe": "^0.2.4",
+    "lodash": "^3.9.3",
+    "main-bower-files": "^2.8.2",
+    "run-sequence": "^1.1.2"
+  }
+}

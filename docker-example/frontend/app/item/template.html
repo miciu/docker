@@ -1,0 +1,37 @@
+<div>
+    <div class="row">
+        <div class="col-md-3">
+            <label for="itemName">Item Name:</label>
+            <input id="itemName"
+                   ng-model="item" maxlength="10"
+                   class="input-text"/>
+        </div>
+        <div class="col-md-1">
+            <button type="button" ng-click="vm.addItem(item)" class="btn btn-success">
+                <i class="glyphicon glyphicon-plus">
+                </i> Add item
+            </button>
+        </div>
+    </div>
+
+    <div class="row col-md-5">
+        <table id="table" class="table table-condensed">
+            <thead>
+            <tr>
+                <th>Item</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="row in items">
+                <td>{{row}}</td>
+                <td>
+                    <button type="button" ng-click="vm.removeItem(row)" class="btn btn-danger">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
